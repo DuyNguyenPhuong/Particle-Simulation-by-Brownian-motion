@@ -1,0 +1,17 @@
+Chi Nguyen & Duy Nguyen
+
+1. MVP:
+- Superclass: Particles
+- Subclasses: Electron (move in straight line, constant angle, constant direction)
+                    + 
+              & Confetti (randomized vector, randomized direction, has a lifespan)
+                    + @Override updateStatus (to update lifspan) and move (to change velocity)
+- Two other components: Simulate for 1 second, chart particle density in each box region
+              sort function (sort regions with highest particle density from highest to lowest)
+              queue to save particles position per second to map trajectory
+
+- Independent: Collision
+               Run for more than 1 second x
+               Graphic for trajectory
+               Add Subclass Photon (moves in sine curve, which the real photon does
+               not do but we will pretend for this project's sake)
